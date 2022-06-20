@@ -5,7 +5,7 @@ Se realizará para la empresa "Disco Centro"
 
 ### Primero ajusta las variables de entrono:
 
-1.  crea un archivo ".env" en la raiz del proyecto
+1.  crea un archivo ".env.local" en la raiz del proyecto
 2.  inserta una linea de codigo similar a esta 
         DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
     donde cada componente se refiere a los siguientes parametros:
