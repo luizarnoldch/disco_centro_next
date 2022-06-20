@@ -1,8 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Esta es un proyecto lanzado con [Next.js](https://nextjs.org/) con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Se realizará para la empresa "Disco Centro"
 
 ## Getting Started
 
-First, run the development server:
+### Primero ajusta las variables de entrono:
+
+1. crea un archivo ".env" en la raiz del proyecto
+2. inserta una linea de codigo similar a esta 
+        DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
+   donde cada componente se refiere a los siguientes parametros:
+        postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=SCHEMA
+
+### Luego corre el servidor de desarrollo en la terminal:
 
 ```bash
 npm run dev
