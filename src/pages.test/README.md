@@ -1,0 +1,1 @@
+# Next JS Pages tests (this avoid test to treated as a Next.js pages)
