@@ -1,0 +1,22 @@
+input {
+  outline: none;
+  background-color: $dark-bg-2;
+  border-radius: 5px;
+  width: calc(100% - 5px);
+  height: 45px;
+  font-weight: $font-medium;
+  font-size: 0.875rem; //14px
+}
+
+.password {
+  background-image: url('../../../assets/img/eye.png');
+  background-repeat: no-repeat;
+  //1border: red 1px solid;
+
+  &__img {
+    position: relative;
+    height: 20px;
+    text-align: right;
+    z-index: 10;
+  }
+}
