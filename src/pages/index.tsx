@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Input from '../layouts/input/Input'
-
-
+import Button from '../layouts/button/Button'
 const Home: NextPage = () => {
   
   const eyeOpen:string = `../assets/img/eye.png`
@@ -14,27 +13,58 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className="login__body">
-        <div className="login__body__form">
+        <form className="login__body__form" action="">
+            <label htmlFor="email">Correo</label>
+            <Input
+              type="email"
+              placeholder="Ejemplo@gmail.com"
+              autofocus = "autofocus"
+              autocomplete= "autocomplete"
+              name = "email"
+            />
 
-          <label htmlFor="email">Correo</label>
-          <Input
-            type="email"
-            placeholder="Ejemplo@gmail.com"
-            autofocus = "autofocus"
-            autocomplete= "autocomplete"
-            name = "email"
-          />
-          <label htmlFor="password">Contraseña</label>
+            <label htmlFor="password">Contraseña</label>
+            <Input
+              type="password"
+              placeholder="Introduce tu contraseña"
+              name = "password"
+            />
 
-          <Input
-            type="password"
-            placeholder="Introduce tu contraseña"
-            name = "password"
-          />
-          boton-Continuar <br />
+            <Button
+              text = "Continuar"
+              type = "submit"
+            />
+          
+        </form>
+        <div className="separador">
+          <hr />
+          <div className="borde-circulo">
+            <div className="circulo"></div>
+          </div>
+          <hr />
         </div>
-        
-        
+        <div className="login__body__auth">
+          <Button
+            text = "Continuar con facebook"
+            type = "submit"
+            image = "fb"
+          />
+          <Button
+            text = "Continuar con Google"
+            type = "submit"
+            image = "goo"
+          />
+          <Button
+            text = "Continuar con Twitter"
+            type = "submit"
+            image = "twt"
+          />
+          <Button
+            text = "Continuar con Instagram"
+            type = "submit"
+            image = "ig"
+          />
+        </div>
         
         {/* <br />
         <div className="separador">

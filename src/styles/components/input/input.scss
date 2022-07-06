@@ -1,22 +1,34 @@
-input {
-  outline: none;
-  background-color: $dark-bg-2;
-  border-radius: 5px;
-  width: calc(100% - 5px);
-  height: 45px;
-  font-weight: $font-medium;
-  font-size: 0.875rem; //14px
-}
+.input-container {
+  margin-bottom: 10px;
+  //@include flex(center, center);
 
-.password {
-  background-image: url('../../../assets/img/eye.png');
-  background-repeat: no-repeat;
-  //1border: red 1px solid;
+  input {
+    outline: none;
+    background-color: $dark-bg-2;
+    border-radius: 5px;
+    width: calc(100% - 1.25rem);
+    height: 45px;
+    font-weight: $font-medium;
+    font-size: 0.875rem; //14px
+    border: none;
+    padding-left: 1.25rem;
 
-  &__img {
-    position: relative;
-    height: 20px;
-    text-align: right;
-    z-index: 10;
+    &:hover{
+      font-weight: $font-bold;
+    }
+  }
+
+  
+  .input-container__img {
+    //background-image: url('../../../assets/img/eye.png');
+    //background-repeat: no-repeat;
+    //1border: red 1px solid;
+    height: 1.25rem;
+    width: 1.25rem;
+    position: absolute;
+    //border: 1px solid red;
+    right: 2.5rem;
+    bottom: 57.5%;
   }
 }
+
